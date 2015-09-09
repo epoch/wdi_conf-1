@@ -1,6 +1,6 @@
 function initMap() {
   var myLatLng = {lat: -37.818116, lng: 144.959229};
-  var icon = "/public/images/ga-pointer.svg";
+  var icon = "public/images/ga-pointer.svg";
   var label = 'General Assembly : 12A/45 William Street, Melbourne VIC 3000';
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 16,

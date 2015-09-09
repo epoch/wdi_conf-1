@@ -50,7 +50,7 @@ body {
     padding-top: 0.5em; }
 
 .landing-panel {
-  background: url("images/cityscape.jpg");
+  background: url("~/wdiconf/public/images/cityscape.jpg");
   background-size: cover;
   height: 50em;
   text-align: center; }

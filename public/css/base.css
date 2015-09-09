@@ -201,11 +201,12 @@ body {
           transition: 0.2s; }
 
 .twitter-panel {
-  height: 35em;
-  margin: 0 auto;
   background-color: rgba(0, 210, 255, 0.4);
   text-align: center;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0 auto;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em; }
   .twitter-panel .twitter-sections {
     display: -webkit-box;
     display: -webkit-flex;
@@ -216,6 +217,9 @@ body {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -228,9 +232,9 @@ body {
       margin-right: 3.5em; }
 
 .speakers-panel {
-  height: 35em;
   margin: 0 auto;
-  padding-top: 2.5em; }
+  padding-top: 2.5em;
+  padding-bottom: 2.5em; }
   .speakers-panel .speakers-div {
     margin-top: 5em;
     display: -webkit-box;
@@ -245,11 +249,15 @@ body {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
     .speakers-panel .speakers-div .speaker-tile {
       display: inline-block;
       margin-right: 1%;
-      margin-left: 1%; }
+      margin-left: 1%;
+      margin-bottom: 1em; }
     .speakers-panel .speakers-div .speaker-avatar {
       border-radius: 100%;
       border: 2px solid #00D2FF; }
@@ -278,10 +286,10 @@ body {
         padding: 0em 0.2em 0em 0.2em; }
 
 .schedule-panel {
-  height: 50em;
   margin: 0 auto;
   background-color: rgba(0, 210, 255, 0.4);
   padding-top: 2.5em;
+  padding-bottom: 2em;
   /* Decoration */
   /*.comment .text:before {
     top: 18px;
@@ -299,7 +307,7 @@ body {
 }*/ }
   .schedule-panel div.comments {
     font-weight: 300;
-    width: 650px;
+    width: 50%;
     margin: 0 auto; }
   .schedule-panel .comment {
     overflow: hidden;
@@ -364,20 +372,35 @@ body {
     background: #00D2FF; }
 
 .sponsors-panel {
-  height: 25em;
   background-color: white;
   text-align: center;
-  padding-top: 2.5em; }
-  .sponsors-panel .sponsor-img {
-    height: 10em;
-    margin: 0em 1em 0em 1em; }
+  padding-top: 2.5em;
+  margin: 0 auto;
+  margin-bottom: 2em; }
+  .sponsors-panel .sponsor-img-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+    .sponsors-panel .sponsor-img-section .sponsor-each {
+      height: 10em;
+      width: auto;
+      margin: 0em 1em 0em 1em; }
 
 .contact-panel {
-  height: 40em;
   margin: 0 auto;
   padding-top: 2.5em;
   background-color: rgba(0, 210, 255, 0.4);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  padding-bottom: 2em; }
   .contact-panel p {
     margin-top: 0px; }
   .contact-panel .col-span {
@@ -393,17 +416,22 @@ body {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
   .contact-panel .maps {
+    margin-top: 1em;
     margin-left: 2%;
     margin-right: 2%;
-    width: 40%;
-    max-height: 100%;
+    width: 400px;
+    height: 400px;
     border: solid 3px white; }
   .contact-panel .contact-form {
+    margin-top: 1em;
     margin-left: 2%;
     margin-right: 2%;
-    width: 40%; }
+    width: 400px; }
     .contact-panel .contact-form .contact-input {
       max-width: 100%;
       width: 100%;
@@ -446,3 +474,9 @@ body {
   position: fixed;
   width: 100%;
   top: 0; }
+
+@media screen and (max-width: 900px) {
+  .schedule-panel div.comments {
+    width: 100%; } }
+
+/* Smartphones (portrait and landscape) ----------- */

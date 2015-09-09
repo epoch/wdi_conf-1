@@ -1,17 +1,24 @@
 // SPONSORS =======================================================
 
   .sponsors-panel {
-    height: 25em;
+    // height: 25em;
     background-color: white;
     text-align: center;
     padding-top: 2.5em;
-    // margin: 0 auto;
+    margin: 0 auto;
+    margin-bottom: 2em;
 
-    .sponsor-img {
+  .sponsor-img-section {
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row wrap;
+
+    .sponsor-each {
       // text-align: center;
-
       height: 10em;
+      width: auto;
       margin: 0em 1em 0em 1em;
     }
 
   }
+}

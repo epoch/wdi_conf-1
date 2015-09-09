@@ -1,16 +1,19 @@
   // TWITTER =======================================================
 
   .twitter-panel {
-    height: 35em;
-    margin: 0 auto;
+    // height: 35em;
+    // margin: 0 auto;
     background-color: $background-color;
     text-align: center;
     font-weight: 300;
-    // padding-top: 2.5em;
+    margin: 0 auto;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
   
     .twitter-sections {
       display: flex;
       flex-direction: row;
+      flex-flow: row wrap;
       justify-content: center;
 
       .twitter-section-title {
